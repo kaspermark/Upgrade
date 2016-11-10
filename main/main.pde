@@ -1,15 +1,19 @@
 int money;
 int snus;
-int snusClick;
 
 void setup() {
   size(1200, 800);
   rectMode(CENTER);
+  money = 0;
+  snus = 0;
 }
 
 void draw() {
-  money = 0;
-  snus = 0;
+  background(100);
+
+  if (snus < 0) {
+    snus = 0;
+  }
 
   textSize(50);
   text(money, 700, 100);
@@ -18,16 +22,25 @@ void draw() {
   text(snus, 700, 200);
   text("Snus: ", 500, 200);
 
-  ellipse(1100, 725, 100, 100);
-  ellipse(1100, 600, 100, 100);
+  //her trykker man for at få mere snus og penge
+  rect(1100, 725, 100, 100);
+  rect(1100, 600, 100, 100);
 
+  //her trykker man for at få flere upgrades
   rect(150, 300, 100, 100);
   rect(150, 500, 100, 100);
 }
 
 void mousePressed() {
 
-  if (mouseX > 150 && mouseX < 300 && mouseY > 250 && mouseY < 400) {
+  if (mouseX > 1050 && mouseX < 1150 && mouseY > 675 && mouseY < 775) {
     snus = snus + 1;
+  }
+
+  if (mouseX > 1050 && mouseX < 1150 && mouseY > 550 && mouseY < 650) {
+    if (snus != 0) {
+      money = money + 1;
+      snus = snus - 1;
+    }
   }
 }
