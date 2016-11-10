@@ -2,11 +2,14 @@ int money;
 int snus;
 
 void setup() {
+  frameRate(60);
   size(1200, 800);
   rectMode(CENTER);
   money = 0;
   snus = 0;
 }
+
+Dealer myDealer = new Dealer();
 
 void draw() {
   background(100);
@@ -14,7 +17,10 @@ void draw() {
   if (snus < 0) {
     snus = 0;
   }
-
+  
+  myDealer.display();
+  myDealer.getMoney();
+    
   textSize(50);
   text(money, 700, 100);
   text("Money: ", 500, 100);
@@ -24,6 +30,7 @@ void draw() {
 
   //her trykker man for at få mere snus og penge
   rect(1100, 725, 100, 100);
+  text("Snus", 1100, 725);
   rect(1100, 600, 100, 100);
 
   //her trykker man for at få flere upgrades
