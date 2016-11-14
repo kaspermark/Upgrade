@@ -1,12 +1,13 @@
 class Dealer {
 
-  float sellSpeed;
+  int del;
 
-  Dealer(float sS) {
-    sellSpeed = sS;
+  Dealer(int del) {
+    del = 0;
   }
 
   void sell() {
-    snus = snus + sellSpeed;
+    delay(2);
+    snus = snus + 100;
   }
 }

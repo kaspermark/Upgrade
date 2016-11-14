@@ -3,13 +3,15 @@ void musKlik() {
   if (mouseX > 100 && mouseX < 200 && mouseY > 250 && mouseY < 350) {
     if (money >= 10) {
       dealer = dealer + 1;
+      money = money - 10;
     }
   }
   
   //køb en fabrik
   if (mouseX > 100 && mouseX < 200 && mouseY > 450 && mouseY < 550) {
     if (money >= 15) {
-      
+      fabrik = fabrik + 1;
+      money = money - 15;
     }
   }
 

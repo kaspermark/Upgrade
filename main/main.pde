@@ -1,11 +1,11 @@
 int money;
-float snus;
-float dealer;
-float fabrik;
-float moneyPerSec;
-float snusPerSec;
+int snus;
+int dealer;
+int fabrik;
+int moneyPerSec;
+int snusPerSec;
 
-Dealer myDealer = new Dealer(0.4);
+Dealer myDealer = new Dealer(1);
 
 void setup() {
   size(1200, 800);
