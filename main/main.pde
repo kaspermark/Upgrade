@@ -16,27 +16,19 @@ void setup() {
 
 void draw() {
   background(100);
-  SPS();
-  MPS();
+
+  if (snus == 0) {
+    frameCount = 1000000000;
+  }
 
   if (snus < 0) {
     snus = 0;
   }
+  SPS();
+  MPS();
   text();
 }
 
 void mousePressed() {
   musKlik();
-}
-
-void SPS() {
-  if (frameCount % 60 == 0) {
-    snus += snusPerSec;
-  }
-}
-
-void MPS() {
-  if (frameCount % 60 == 0) {
-    money += moneyPerSec;
-  }
 }
