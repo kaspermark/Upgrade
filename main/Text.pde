@@ -4,11 +4,9 @@ textSize(24);
   text(fabrik, 175, 600);
 
   textSize(50);
-  text(money, 700, 100);
-  text("Money: ", 500, 100);
+  text("Money: " + money, 500, 100);
 
-  text(snus, 700, 200);
-  text("Snus: ", 500, 200);
+  text("Snus: " + snus, 500, 200);
 
   //her trykker man for at få mere snus og penge
   rect(1100, 725, 100, 100);
