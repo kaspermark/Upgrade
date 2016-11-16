@@ -17,10 +17,6 @@ void setup() {
 void draw() {
   background(100);
 
-  if (snus == 0) {
-    frameCount = 1000000000;
-  }
-
   if (snus < 0) {
     snus = 0;
   }
