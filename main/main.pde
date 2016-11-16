@@ -33,8 +33,8 @@ void draw() {
   MPS();
   text();
   image(p1,1050, 675, 100, 100);
-  image(p2,150, 300, 100, 100);
- 
+  image(p2,100, 250, 100, 100);
+ image(p3,1050, 550, 100, 100);
 }
 
 void mousePressed() {
