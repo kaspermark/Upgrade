@@ -4,6 +4,10 @@ int dealer;
 int fabrik;
 int moneyPerSec;
 int snusPerSec;
+PImage p1;
+PImage p2;
+PImage p3;
+PImage p4;
 
 void setup() {
   size(1200, 800);
@@ -12,6 +16,11 @@ void setup() {
   snus = 0;
   snusPerSec = 0;
   moneyPerSec = 0;
+  p1=loadImage("snus.png");
+  p2=loadImage("dealer.png");
+  p3=loadImage("money.png");
+  p4=loadImage("fabric.png");
+
 }
 
 void draw() {
@@ -23,6 +32,9 @@ void draw() {
   SPS();
   MPS();
   text();
+  image(p1,1050, 675, 100, 100);
+  image(p2,150, 300, 100, 100);
+ 
 }
 
 void mousePressed() {
