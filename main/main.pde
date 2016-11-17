@@ -8,6 +8,7 @@ PImage p1;
 PImage p2;
 PImage p3;
 PImage p4;
+PImage p5;
 
 void setup() {
   size(1200, 800);
@@ -17,13 +18,14 @@ void setup() {
   snusPerSec = 0;
   moneyPerSec = 0;
   p1=loadImage("snus.png");
-  p2=loadImage("Dealer.png");
+  p2=loadImage("dealer.png");
   p3=loadImage("money.png");
   p4=loadImage("factory.png");
+  p5=loadImage("background.png");
 }
 
 void draw() {
-  background(100);
+  background(p5);
 
 if (snus < 0) {
       snus = 0;
