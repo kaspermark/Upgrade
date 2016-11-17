@@ -26,6 +26,7 @@ void ifs() {
       moneyPerSec = 0;
     }
     if (snus > 0) {
+      moneyPerSec = dealer;
     }
   }
 }
