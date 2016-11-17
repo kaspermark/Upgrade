@@ -19,7 +19,7 @@ void setup() {
   p1=loadImage("snus.png");
   p2=loadImage("Dealer.png");
   p3=loadImage("money.png");
-  p4=loadImage("fabric.png");
+  p4=loadImage("factory.png");
 
 }
 
@@ -35,6 +35,7 @@ void draw() {
   image(p1,1050, 675, 100, 100);
   image(p2,100, 250, 100, 100);
   image(p3,1050, 550, 100, 100);
+  image(p4,100, 450, 100, 100);
 }
 
 void mousePressed() {
