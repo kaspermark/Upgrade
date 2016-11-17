@@ -18,7 +18,7 @@ void setup() {
   snusPerSec = 0;
   moneyPerSec = 0;
   p1=loadImage("snus.png");
-  p2=loadImage("dealer.png");
+  p2=loadImage("Dealer.png");
   p3=loadImage("money.png");
   p4=loadImage("factory.png");
   p5=loadImage("background.png");
@@ -26,7 +26,7 @@ void setup() {
 
 void draw() {
   background(p5);
-
+  
 if (snus < 0) {
       snus = 0;
     }
