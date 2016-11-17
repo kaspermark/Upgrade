@@ -20,7 +20,6 @@ void setup() {
   p2=loadImage("dealer.png");
   p3=loadImage("money.png");
   p4=loadImage("factory.png");
-
 }
 
 void draw() {
@@ -29,13 +28,16 @@ void draw() {
   if (snus < 0) {
     snus = 0;
   }
+  if (money < 0) {
+    money = 0;
+  }
   SPS();
   MPS();
   text();
-  image(p1,1050, 675, 100, 100);
-  image(p2,100, 250, 100, 100);
-  image(p3,1050, 550, 100, 100);
-  image(p4,100, 450, 100, 100);
+  image(p1, 1050, 675, 100, 100);
+  image(p2, 100, 250, 100, 100);
+  image(p3, 1050, 550, 100, 100);
+  image(p4, 100, 450, 100, 100);
 }
 
 void mousePressed() {
