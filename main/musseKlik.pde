@@ -4,10 +4,8 @@ void musKlik() {
     if (money >= 10) {
       money = money - 10;
       dealer = dealer + 1;
-      if (snus > 0) {
-        moneyPerSec = moneyPerSec + 1;
-        snus --;
-      }
+      moneyPerSec = moneyPerSec + 1;
+      
     }
   }
 
