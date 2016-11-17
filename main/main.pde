@@ -9,6 +9,7 @@ PImage p2;
 PImage p3;
 PImage p4;
 PImage p5;
+PImage p6;
 
 void setup() {
   size(1200, 800);
@@ -22,10 +23,13 @@ void setup() {
   p3=loadImage("money.png");
   p4=loadImage("factory.png");
   p5=loadImage("background.png");
+  p6=loadImage("board.png");
 }
 
 void draw() {
   background(p5);
+  image(p6,445,25,325,240);
+
   
 if (snus < 0) {
       snus = 0;
