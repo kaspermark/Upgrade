@@ -28,7 +28,7 @@ void setup() {
 
 void draw() {
   background(p5);
-  image(p6,445,25,325,240);
+  image(p6,400,25,420,240);
 
   
 if (snus < 0) {

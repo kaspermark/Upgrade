@@ -1,7 +1,9 @@
 void text(){
 textSize(24);
-  text(dealer, 175, 400);
-  text(fabrik, 175, 600);
+  text(dealer, 175, 385);
+  fill(0, 102, 153, 204);
+  text(fabrik, 175, 585);
+  fill(0, 102, 153, 204);
 
   textSize(50);
   text("Money: " + money, 500, 100);
