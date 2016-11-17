@@ -17,7 +17,7 @@ void setup() {
   snusPerSec = 0;
   moneyPerSec = 0;
   p1=loadImage("snus.png");
-  p2=loadImage("Dealer.png");
+  p2=loadImage("dealer.png");
   p3=loadImage("money.png");
   p4=loadImage("factory.png");
 
