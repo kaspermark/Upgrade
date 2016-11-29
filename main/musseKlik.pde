@@ -5,7 +5,6 @@ void musKlik() {
       money = money - 10;
       dealer = dealer + 1;
       moneyPerSec = moneyPerSec + 1;
-      
     }
   }
 

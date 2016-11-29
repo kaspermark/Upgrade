@@ -19,7 +19,8 @@ void ifs() {
     }
 
     if (dealer > 0) {
-      snus = snus - 1;;
+      snus = snus - 1;
+      ;
     }
 
     if (snus < 0) {

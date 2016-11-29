@@ -28,12 +28,12 @@ void setup() {
 
 void draw() {
   background(p5);
-  image(p6,425,25,440,240);
+  image(p6, 425, 25, 440, 240);
 
-  
-if (snus < 0) {
-      snus = 0;
-    }
+
+  if (snus < 0) {
+    snus = 0;
+  }
   ifs();
   SPS();
   MPS();
