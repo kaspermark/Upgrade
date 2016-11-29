@@ -17,6 +17,7 @@ PImage p6;
 
 Minim minim;
 AudioPlayer song;
+AudioPlayer song2;
 
 Capture cam;
 
@@ -43,6 +44,8 @@ void setup() {
  
   // this loads mysong.wav from the data folder
   song = minim.loadFile("Money.mp3");
+  song2 = minim.loadFile("BackgroundMusic.mp3");
+  song2.loop();
   
   size(1200, 800);
   rectMode(CENTER);

@@ -27,7 +27,7 @@ void musKlik() {
       money = money + 1;
       snus = snus - 1;
       song.play();
-      
+      song.rewind();
     }
   }
 }
