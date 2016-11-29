@@ -26,6 +26,8 @@ void musKlik() {
     if (snus != 0) {
       money = money + 1;
       snus = snus - 1;
+      song.play();
+      
     }
   }
 }
